@@ -5,7 +5,7 @@ import io
 from PIL import Image
 import time
 
-PATH = "chromedriver.exe"
+PATH = "D:/Programming/Projects/Drone Programming/Fire Detection/V2/final-year-project/web scraping/chromedriver.exe"
 
 # wd stands for web driver
 wd = webdriver.Chrome(PATH)
@@ -68,3 +68,8 @@ for i, url in enumerate(img_urls):
     download_image("images/fire/", url, f"fire_{i}.jpg")
 
 wd.quit()
+
+'''
+manual selection of downloaded images
+resize the images to have the same size (192 x 192 x 3) -> Done before training
+'''
